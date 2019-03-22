@@ -31,10 +31,10 @@ const navigation = {
     return openStateGetter();
   },
 
-  commitOpenState: b.commit(setOpenState),
+  commitOpenState: b.commit(setOpenState, 'setOpenState'),
 
-  dispatchToggleNavigation: b.dispatch(toggleNavigation),
-  dispatchCloseNavigation: b.dispatch(closeNavigation),
+  dispatchToggleNavigation: b.dispatch(toggleNavigation, 'toggleNavigation'),
+  dispatchCloseNavigation: b.dispatch(closeNavigation, 'closeNavigation'),
 };
 
 export default navigation;
